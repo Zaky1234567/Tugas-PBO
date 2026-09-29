@@ -7,5 +7,4 @@
 *   `Main.java`: Kelas utama untuk menjalankan skenario pendaftaran nasabah dan uji coba transaksi.
 
 ## 📸 Screenshot Eksekusi Program
-![Screenshot Output Program](Tugas-PBO/screenshots/Output.png)
-*(Hasil runningnya)*
+![Screenshot Output Program](screenshots/Output.png)
