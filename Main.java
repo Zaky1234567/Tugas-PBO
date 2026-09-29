@@ -17,6 +17,9 @@ public class Main {
         Account rizkyAccount = new Account(1000000);
         customerRizky.setAccount(rizkyAccount);
 
+        System.out.println("Saldo Awal: Rp " + customerZaky.getAccount(0).getBalance());
+        System.out.println("Saldo Awal: Rp " + customerRizky.getAccount(0).getBalance());
+
         boolean isSuccess = customerZaky.getAccount(0).withdraw(150000);
         boolean isSuccessRizky = customerRizky.getAccount(0).withdraw(200000);
 
