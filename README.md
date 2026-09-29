@@ -2,7 +2,7 @@
 
 ## Daftar File (Source Code)
 *   `Account.java`: Kelas untuk mengelola saldo serta logika transaksi setor `deposit` dan tarik tunai `withdraw`.
-*   `Customer.java`: Kelas penyimpan data identitas nasabah dan daftar rekening yang dimiliki (maksimal 5 rekening).
+*   `Customer.java`: Kelas penyimpan data identitas nasabah dan daftar rekening yang dimiliki.
 *   `Bank.java`: Kelas pengelola daftar seluruh nasabah di dalam sistem bank.
 *   `Main.java`: Kelas utama untuk menjalankan skenario pendaftaran nasabah dan uji coba transaksi.
 

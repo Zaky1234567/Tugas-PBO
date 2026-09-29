@@ -1,12 +1,14 @@
+import java.util.ArrayList; // Wajib diimpor untuk menggunakan ArrayList
+
 public class Customer {
     private String firstName;
     private String lastName;
-    private Account[] accounts = new Account[5];
-    private int numberOfAccounts = 0;
+    private ArrayList<Account> accounts; 
 
     public Customer(String f, String l) {
         this.firstName = f;
         this.lastName = l;
+        this.accounts = new ArrayList<>();
     }
 
     public String getFirstName() {
@@ -18,16 +20,14 @@ public class Customer {
     }
 
     public void setAccount(Account acct) {
-        if (numberOfAccounts < 5) {
-            accounts[numberOfAccounts++] = acct;
-        }
+        this.accounts.add(acct); 
     }
 
     public Account getAccount(int account_index) {
-        return accounts[account_index];
+        return this.accounts.get(account_index); 
     }
     
     public int getNumOfAccounts() {
-        return this.numberOfAccounts;
+        return this.accounts.size(); 
     }
 }

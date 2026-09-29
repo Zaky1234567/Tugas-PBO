@@ -1,22 +1,21 @@
+import java.util.ArrayList;
+
 public class Bank {
-    private Customer[] customers;
-    private int numberOfCustomers;
+    private ArrayList<Customer> customers; 
 
     public Bank() {
-        this.customers = new Customer[10]; 
-        this.numberOfCustomers = 0;
+        this.customers = new ArrayList<>();
     }
 
     public void addCustomer(String f, String l) {
-        this.customers[numberOfCustomers] = new Customer(f, l);
-        this.numberOfCustomers++;
+        this.customers.add(new Customer(f, l)); 
     }
 
     public int getNumOfCustomers() {
-        return this.numberOfCustomers;
+        return this.customers.size(); 
     }
 
     public Customer getCustomer(int index) {
-        return this.customers[index]; //[cite: 9]
+        return this.customers.get(index); 
     }
 }
